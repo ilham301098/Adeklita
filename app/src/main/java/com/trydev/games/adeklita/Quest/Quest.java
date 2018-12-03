@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat.Quest;
+package com.trydev.games.adeklita.Quest;
 
 /**
  * Created by user on 6/11/2018.

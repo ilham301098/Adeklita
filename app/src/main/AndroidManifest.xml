@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.trydev.games.guesswhat">
+    package="com.trydev.games.adeklita">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
@@ -12,27 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.trydev.games.adeklita.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".GameActivity"
+            android:name="com.trydev.games.adeklita.GameActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CategoryActivity"
+            android:name="com.trydev.games.adeklita.CategoryActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".FinalActivity"
+            android:name="com.trydev.games.adeklita.FinalActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".InstructionActivity"
+            android:name="com.trydev.games.adeklita.InstructionActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.trydev.games.adeklita.SplashActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -42,38 +42,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MenuActivity"
+            android:name="com.trydev.games.adeklita.MenuActivity"
             android:label="Adek Lita" />
         <activity
-            android:name=".MenuBalitaActivity"
+            android:name="com.trydev.games.adeklita.MenuBalitaActivity"
             android:label="Adek Lita" />
         <activity
-            android:name=".ArticleActivity"
+            android:name="com.trydev.games.adeklita.ArticleBalitaActivity"
             android:label="Article Adek Lita" />
         <activity
-            android:name=".HitungActivity"
+            android:name="com.trydev.games.adeklita.ArticleOrtuActivity"
+            android:label="Article Adek Lita" />
+        <activity
+            android:name="com.trydev.games.adeklita.HitungActivity"
             android:label="Hitung Berat Badan Ideal"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.trydev.games.adeklita.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.trydev.games.adeklita.MainActivity" />
         </activity>
         <activity
-            android:name=".HasilActivity"
+            android:name="com.trydev.games.adeklita.HasilActivity"
             android:label="Hasil BMI"
             android:launchMode="singleTask"
-            android:parentActivityName=".HitungActivity">
+            android:parentActivityName="com.trydev.games.adeklita.HitungActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HitungActivity" />
+                android:value="com.trydev.games.adeklita.HitungActivity" />
         </activity>
 
         <service
-            android:name=".Service.MediaService"
+            android:name="com.trydev.games.adeklita.Service.MediaService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Activitylistdata"></activity>
+        <activity android:name="com.trydev.games.adeklita.ActivityListData"></activity>
     </application>
 
 </manifest>

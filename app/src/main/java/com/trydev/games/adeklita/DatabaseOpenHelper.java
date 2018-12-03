@@ -1,11 +1,11 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.Context;
 
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 public class DatabaseOpenHelper extends SQLiteAssetHelper {
-    private static final String DATABASE_NAME = "Adeklit.sqlite";
+    private static final String DATABASE_NAME = "Article.sqlite";
     private static final int DATABASE_VERSION = 1;
 
     public DatabaseOpenHelper(Context context){

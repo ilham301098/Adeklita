@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.trydev.games.guesswhat.InstructionActivity"
+    tools:context="com.trydev.games.adeklita.InstructionActivity"
     android:background="@drawable/background"
     android:padding="16dp"
     android:orientation="vertical"
@@ -26,18 +26,19 @@
                 android:shadowColor="@color/shadow_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+
             <TextView
-                android:fontFamily="@font/raleway_extra_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/raleway_extra_bold"
+                android:shadowColor="@color/shadow_color"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
                 android:text="@string/instruction"
                 android:textColor="@android:color/white"
-                android:shadowColor="@color/shadow_color"
-                android:shadowDy="3"
-                android:shadowDx="3"
-                android:shadowRadius="1"
-                android:textSize="20sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -42,7 +42,7 @@ public class DatabaseAccess {
 
     public String[] getTitleBalita(){
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT * FROM ArticleAdeklita WHERE Jenis='1' ORDER BY `ID` ASC", null);
+        Cursor cursor = database.rawQuery("SELECT * FROM ArticleAdeklita WHERE Jenis='1'", null);
         cursor.moveToFirst();
         while(!cursor.isAfterLast()){
             list.add(cursor.getString(1));
@@ -73,7 +73,7 @@ public class DatabaseAccess {
 
     public String[] getTitleOrtu(){
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT * FROM ArticleAdeklita WHERE Jenis='2' ORDER BY `ID` ASC", null);
+        Cursor cursor = database.rawQuery("SELECT * FROM ArticleAdeklita WHERE Jenis='2'", null);
         cursor.moveToFirst();
         while(!cursor.isAfterLast()){
             list.add(cursor.getString(1));

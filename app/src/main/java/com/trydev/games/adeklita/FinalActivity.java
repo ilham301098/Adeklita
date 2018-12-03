@@ -1,7 +1,6 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.Intent;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import static com.trydev.games.guesswhat.MenuBalitaActivity.seek;
+import static com.trydev.games.adeklita.MenuBalitaActivity.seek;
 
 public class FinalActivity extends AppCompatActivity implements View.OnClickListener{
 

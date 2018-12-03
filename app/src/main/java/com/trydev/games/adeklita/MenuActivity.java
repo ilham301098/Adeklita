@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -63,13 +63,13 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void goToOrtu(View view){
-        Intent i = new Intent(MenuActivity.this, ArticleActivity.class);
+        Intent i = new Intent(MenuActivity.this, ArticleOrtuActivity.class);
         startActivity(i);
     }
 
 
     public void goToBalita(View view){
-        Intent i = new Intent(MenuActivity.this, ArticleActivity.class);
+        Intent i = new Intent(MenuActivity.this, ArticleBalitaActivity.class);
         startActivity(i);
     }
 

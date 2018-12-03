@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.Manifest;
 import android.content.DialogInterface;

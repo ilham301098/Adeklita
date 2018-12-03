@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat.Service;
+package com.trydev.games.adeklita.Service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -7,9 +7,8 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
-import com.trydev.games.guesswhat.R;
+import com.trydev.games.adeklita.R;
 
 import java.io.IOException;
 

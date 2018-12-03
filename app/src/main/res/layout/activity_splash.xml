@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorSilver"
-    tools:context="com.trydev.games.guesswhat.SplashActivity">
+    tools:context="com.trydev.games.adeklita.SplashActivity">
 
     <ImageView
         android:layout_width="wrap_content"

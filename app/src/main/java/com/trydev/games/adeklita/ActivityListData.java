@@ -1,13 +1,12 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Activitylistdata extends AppCompatActivity {
+public class ActivityListData extends AppCompatActivity {
     TextView listdata;
     TextView isi;
     @Override

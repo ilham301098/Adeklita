@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -7,12 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.trydev.games.guesswhat.Quest.Quest;
-import com.trydev.games.guesswhat.Service.MediaService;
+import com.trydev.games.adeklita.Quest.Quest;
 
 import java.util.ArrayList;
 
-import static com.trydev.games.guesswhat.MenuBalitaActivity.seek;
+import static com.trydev.games.adeklita.MenuBalitaActivity.seek;
 
 public class CategoryActivity extends AppCompatActivity implements View.OnClickListener{
 

@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,8 +18,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.trydev.games.guesswhat.Quest.Quest;
-import com.trydev.games.guesswhat.Service.MediaService;
+import com.trydev.games.adeklita.Quest.Quest;
 
 import java.util.ArrayList;
 import java.util.Locale;

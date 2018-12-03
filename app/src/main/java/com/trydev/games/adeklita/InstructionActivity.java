@@ -1,15 +1,10 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
-import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 
-import com.trydev.games.guesswhat.Service.MediaService;
-
-import static com.trydev.games.guesswhat.MenuBalitaActivity.seek;
+import static com.trydev.games.adeklita.MenuBalitaActivity.seek;
 
 public class InstructionActivity extends AppCompatActivity {
 

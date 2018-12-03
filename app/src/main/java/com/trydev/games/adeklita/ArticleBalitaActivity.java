@@ -1,4 +1,4 @@
-package com.trydev.games.guesswhat;
+package com.trydev.games.adeklita;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,15 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class ArticleActivity extends AppCompatActivity {
+public class ArticleBalitaActivity extends AppCompatActivity {
     ListView listView;
+    TextView head;
 
     String[] daftarTitle;
-    int[] fruitImages = {R.drawable.alita,R.drawable.alita,R.drawable.alita,R.drawable.alita,R.drawable.alita};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +22,8 @@ public class ArticleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_article);
 
         listView = findViewById(R.id.idListView);
+        head=findViewById(R.id.header);
+        head.setText("ARTICLE BALITA");
 
         DatabaseAccess databaseAccess = DatabaseAccess.getInstance(this);
         databaseAccess.open();
@@ -33,10 +34,8 @@ public class ArticleActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Toast.makeText(getApplicationContext(),fruitNames[i],Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(getApplicationContext(),Activitylistdata.class);
+                Intent intent = new Intent(getApplicationContext(),ActivityListData.class);
                 intent.putExtra("name",daftarTitle[i]);
-                intent.putExtra("image",fruitImages[i]);
                 startActivity(intent);
 
             }
@@ -64,11 +63,9 @@ public class ArticleActivity extends AppCompatActivity {
         public View getView(int i, View view, ViewGroup viewGroup) {
             View view1 = getLayoutInflater().inflate(R.layout.row_data,null);
             //getting view in row_data
-            TextView name = view1.findViewById(R.id.fruits);
-            ImageView image = view1.findViewById(R.id.images);
+            TextView name = view1.findViewById(R.id.IDtitle);
 
             name.setText(daftarTitle[i]);
-            image.setImageResource(fruitImages[i]);
             return view1;
 
 
