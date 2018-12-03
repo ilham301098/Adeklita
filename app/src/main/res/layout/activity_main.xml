@@ -8,71 +8,94 @@
     android:background="@drawable/background"
     android:padding="16dp"
     >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="312dp"
+        android:layout_height="141dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/alitalogo" />
+
     <TextView
+        android:id="@+id/kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
         android:text="Pilih Kategori"
         android:textAlignment="center"
-        android:textSize="50sp"
-        android:shadowRadius="2"
-        android:shadowDy="10"
-        android:shadowDx="10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textSize="40sp" />
+
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:layout_centerInParent="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_below="@id/kategori">
+
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
             <ImageButton
                 android:id="@+id/pgBalita"
-                android:src="@drawable/baby1"
-                android:scaleType="fitCenter"
-                android:background="@android:color/transparent"
-                android:adjustViewBounds="true"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="pageBalita"/>
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:onClick="pageBalita"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baby1" />
+
             <TextView
-                android:textSize="24sp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:shadowRadius="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:shadowDx="5"
                 android:shadowDy="5"
+                android:shadowRadius="1"
                 android:text="Balita"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
         </LinearLayout>
+
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/pgOrtu"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="300dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:onClick="pageOrtu"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ortu1" />
+
             <TextView
-                android:textSize="24sp"
-                android:textAlignment="center"
-                android:text="Orang Tua"
-                android:shadowDy="5"
-                android:shadowDx="5"
-                android:shadowRadius="1"
-                android:textColor="@android:color/white"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="1"
+                android:text="Orang Tua"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
         </LinearLayout>
     </LinearLayout>
 

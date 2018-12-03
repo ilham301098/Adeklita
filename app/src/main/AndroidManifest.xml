@@ -42,12 +42,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ArticleBalitaActivity"
-            android:label="Article Balita" />
-        <activity
-            android:name=".ArticleOrtuActivity"
-            android:label="Article Orang Tua" />
-        <activity
             android:name=".MenuActivity"
             android:label="Adek Lita" />
         <activity
