@@ -8,13 +8,37 @@
     tools:context="com.trydev.games.adeklita.SplashActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="111dp"
+        android:layout_marginTop="64dp"
         android:adjustViewBounds="true"
         android:maxWidth="300dp"
         android:maxHeight="300dp"
         android:src="@drawable/alitalogo" />
+
+    <TextView
+        android:id="@+id/adeklita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/showg"
+        android:textColor="#FFD005"
+        android:text="Adek Lita"
+        android:textAlignment="center"
+        android:textSize="60sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Pendidikan Anak Usia Balita"
+        android:layout_below="@id/adeklita"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </RelativeLayout>

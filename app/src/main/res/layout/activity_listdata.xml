@@ -21,19 +21,18 @@
         android:id="@+id/listdata"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="193dp"
-        android:text="Apple"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="15dp"
+        android:text="Judul"
         android:textAlignment="center"
-        android:textColor="#000"
+        android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
         android:layout_below="@id/listdata">
     <LinearLayout
         android:layout_width="match_parent"
