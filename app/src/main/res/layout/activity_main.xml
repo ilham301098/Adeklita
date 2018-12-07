@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.trydev.games.adeklita.MainActivity"
-    android:background="@drawable/background"
+    android:background="@drawable/background2"
     android:padding="16dp"
     >
 
@@ -25,12 +25,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="158dp"
-        android:shadowDx="10"
-        android:shadowDy="10"
-        android:shadowRadius="2"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
         android:text="Pilih Kategori"
         android:textAlignment="center"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:textColor="@color/gradient_top"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -60,6 +62,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:shadowColor="@color/shadow_color"
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="1"
@@ -88,6 +91,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:shadowColor="@color/shadow_color"
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="1"

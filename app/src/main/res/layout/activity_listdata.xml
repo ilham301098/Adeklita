@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background2"
     tools:context=".ActivityListData">
 
 
@@ -26,7 +26,11 @@
         android:text="Judul"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -48,7 +52,10 @@
             android:text="Deskripsi"
             android:fontFamily="@font/raleway_extra_bold"
             android:textColor="#000"
-            android:textSize="15dp" />
+            android:textSize="15dp"                   android:shadowColor="@color/shadow_color"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1" />
 
     </LinearLayout>
     </ScrollView>
