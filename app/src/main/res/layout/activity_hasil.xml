@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.trydev.games.adeklita.HasilActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,6 +21,11 @@
             android:layout_centerInParent="true"
             android:src="@drawable/alita" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
         <TextView
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -79,6 +84,7 @@
             android:textSize="18sp"
             android:id="@+id/text_view_hasil_ket"
             android:textStyle="bold"/>
+        </LinearLayout>
     </LinearLayout>
 
 
