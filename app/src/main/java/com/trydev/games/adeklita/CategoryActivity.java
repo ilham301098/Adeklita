@@ -64,45 +64,45 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
     private void crateColorQuest() {
         ArrayList<Quest> colorQuest = new ArrayList<>();
-        colorQuest.add(new Quest(R.drawable.error, "merah"));
-        colorQuest.add(new Quest(R.drawable.home, "putih"));
-        colorQuest.add(new Quest(R.drawable.love,"merah muda"));
-        colorQuest.add(new Quest(R.drawable.music, "oranye"));
-        colorQuest.add(new Quest(R.drawable.star,"kuning"));
-        colorQuest.add(new Quest(R.drawable.success,"hijau"));
-        colorQuest.add(new Quest(R.drawable.user,"ungu"));
-        colorQuest.add(new Quest(R.drawable.water_drop,"biru"));
+        colorQuest.add(new Quest(R.drawable.error, "merah","warna"));
+        colorQuest.add(new Quest(R.drawable.home, "putih","warna"));
+        colorQuest.add(new Quest(R.drawable.love,"merah muda","warna"));
+        colorQuest.add(new Quest(R.drawable.music, "oranye","warna"));
+        colorQuest.add(new Quest(R.drawable.star,"kuning","warna"));
+        colorQuest.add(new Quest(R.drawable.success,"hijau","warna"));
+        colorQuest.add(new Quest(R.drawable.user,"ungu","warna"));
+        colorQuest.add(new Quest(R.drawable.water_drop,"biru","warna"));
         GameActivity.myQuest = colorQuest;
     }
 
     private void crateAlphabetQuest() {
         ArrayList<Quest> alphabetQuest = new ArrayList<>();
-        alphabetQuest.add(new Quest(R.drawable.water_drop, "a"));
+        alphabetQuest.add(new Quest(R.drawable.water_drop, "a","huruf"));
     }
 
     private void createAnimalQuest() {
         ArrayList<Quest> animalQuest = new ArrayList<>();
-        animalQuest.add(new Quest(R.drawable.bear, "beruang"));
-        animalQuest.add(new Quest(R.drawable.cow, "sapi"));
-        animalQuest.add(new Quest(R.drawable.crocodile, "buaya"));
-        animalQuest.add(new Quest(R.drawable.deer, "rusa"));
-        animalQuest.add(new Quest(R.drawable.donkey, "keledai"));
-        animalQuest.add(new Quest(R.drawable.koala, "koala"));
-        animalQuest.add(new Quest(R.drawable.panda, "panda"));
+        animalQuest.add(new Quest(R.drawable.bear, "beruang","hewan"));
+        animalQuest.add(new Quest(R.drawable.cow, "sapi","hewan"));
+        animalQuest.add(new Quest(R.drawable.crocodile, "buaya","hewan"));
+        animalQuest.add(new Quest(R.drawable.deer, "rusa","hewan"));
+        animalQuest.add(new Quest(R.drawable.donkey, "keledai","hewan"));
+        animalQuest.add(new Quest(R.drawable.koala, "koala","hewan"));
+        animalQuest.add(new Quest(R.drawable.panda, "panda","hewan"));
         GameActivity.myQuest = animalQuest;
     }
 
     private void createFruitQuest() {
         ArrayList<Quest> fruitQuest = new ArrayList<>();
-        fruitQuest.add(new Quest(R.drawable.apple_correct, "apel"));
-        fruitQuest.add(new Quest(R.drawable.banana_correct, "pisang"));
-        fruitQuest.add(new Quest(R.drawable.cherry_correct, "ceri"));
-        fruitQuest.add(new Quest(R.drawable.eggplant_correct, "eggplant"));
-        fruitQuest.add(new Quest(R.drawable.grape_correct, "anggur"));
-        fruitQuest.add(new Quest(R.drawable.orange_correct, "jeruk"));
-        fruitQuest.add(new Quest(R.drawable.pear_correct, "pir"));
-        fruitQuest.add(new Quest(R.drawable.strawberry_correct, "strawberry"));
-        fruitQuest.add(new Quest(R.drawable.tomato_correct, "tomat"));
+        fruitQuest.add(new Quest(R.drawable.apple_correct, "apel","buah"));
+        fruitQuest.add(new Quest(R.drawable.banana_correct, "pisang","buah"));
+        fruitQuest.add(new Quest(R.drawable.cherry_correct, "ceri","buah"));
+        fruitQuest.add(new Quest(R.drawable.eggplant_correct, "eggplant","buah"));
+        fruitQuest.add(new Quest(R.drawable.grape_correct, "anggur","buah"));
+        fruitQuest.add(new Quest(R.drawable.orange_correct, "jeruk","buah"));
+        fruitQuest.add(new Quest(R.drawable.pear_correct, "pir","buah"));
+        fruitQuest.add(new Quest(R.drawable.strawberry_correct, "strawberry","buah"));
+        fruitQuest.add(new Quest(R.drawable.tomato_correct, "tomat","buah"));
         GameActivity.myQuest = fruitQuest;
     }
 

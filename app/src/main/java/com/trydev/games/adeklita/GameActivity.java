@@ -197,9 +197,19 @@ public class GameActivity extends AppCompatActivity implements View.OnTouchListe
 //            Log.d("LIST OF QUESTION", "QUESTION: "+myQuest.get(i).getTrueanswer());
 //        }
         if (myQuest.size()>0){
-            result.setText(R.string.static_question);
+//            result.setText(R.string.static_question);
+
             random = number;
             quest = myQuest.get(number);
+            if (quest.getTipe()=="hewan") {
+                result.setText("hewan apakah ini ?");
+            } else if (quest.getTipe()== "buah"){
+                result.setText("Buah apakah ini ?");
+            } else if (quest.getTipe()=="huruf"){
+                result.setText("Huruf Apakah ini ?");
+            } else if (quest.getTipe()=="warna"){
+                result.setText("Warna apakah ini?");
+            }
             questimage.setImageResource(quest.getUrl());
         } else if (myQuest.size()==1){
             skip.setText("");

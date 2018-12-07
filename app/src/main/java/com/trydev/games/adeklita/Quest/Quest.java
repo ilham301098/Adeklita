@@ -7,10 +7,20 @@ package com.trydev.games.adeklita.Quest;
 public class Quest {
     private String trueanswer;
     private int url;
+    private String tipe;
 
-    public Quest(int url, String trueanswer) {
+    public Quest(int url, String trueanswer, String tipe) {
         this.url = url;
         this.trueanswer = trueanswer;
+        this.tipe = tipe;
+    }
+
+    public String getTipe() {
+        return tipe;
+    }
+
+    public void setTipe(String tipe) {
+        this.tipe = tipe;
     }
 
     public int getUrl() {
