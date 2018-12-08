@@ -25,9 +25,8 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="0dp"
             android:text="JUDUL"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="20dp"
-            android:shadowColor="@color/shadow_color"
             android:shadowDx="5"
             android:shadowDy="5"
             android:shadowRadius="1"/>
