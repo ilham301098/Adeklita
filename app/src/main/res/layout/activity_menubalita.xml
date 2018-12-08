@@ -9,58 +9,62 @@
     android:paddingBottom="16dp"
     >
 
-    <ImageView
-        android:id="@+id/banana"
-        android:layout_marginTop="85dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/banana_title"
-        style="@style/fruit_title"
-        />
-    <ImageView
-        android:id="@+id/cherry"
-        android:layout_toStartOf="@id/banana"
-        style="@style/fruit_title"
-        android:src="@drawable/cherry_correct"
-        android:layout_marginTop="85dp"
-        />
-    <ImageView
-        style="@style/fruit_title"
-        android:src="@drawable/grape_correct"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="-35dp"
-        android:rotation="70"
-        android:layout_marginRight="-20dp"
-        />
 
     <ImageView
         style="@style/fruit_title"
-        android:src="@drawable/orange_correct"
-        android:layout_marginTop="-20dp"
-        android:layout_marginLeft="-15dp"
-        />
+        android:layout_width="93dp"
+        android:layout_height="117dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="-20dp"
+        android:rotation="70"
+        android:src="@drawable/grape_correct" />
+
+    <ImageView
+        style="@style/fruit_title"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/orange_correct" />
+
     <ImageView
         android:id="@+id/panda"
         style="@style/fruit_title"
-        android:src="@drawable/panda"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="115dp"
+        android:src="@drawable/panda" />
+
     <ImageView
-        android:layout_toEndOf="@id/panda"
         style="@style/fruit_title"
-        android:src="@drawable/cow"
-        />
+        android:layout_alignStart="@+id/start"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/cow" />
+
     <ImageView
+        style="@style/fruit_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-15dp"
         android:layout_toStartOf="@id/panda"
-        style="@style/fruit_title"
-        android:src="@drawable/bear"
-        />
+        android:src="@drawable/bear" />
 
     <ImageView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="420dp"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
         android:paddingLeft="16dp"
@@ -70,21 +74,30 @@
     <ImageButton
         android:id="@+id/start"
         style="@style/Buttons"
+        android:layout_width="235dp"
+        android:layout_height="101dp"
         android:layout_below="@id/title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-127dp"
+        android:layout_alignStart="@+id/exit"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="19dp"
         android:src="@drawable/mulai_button_en" />
+
     <ImageButton
         android:id="@+id/instruction"
         style="@style/Buttons"
+        android:layout_width="235dp"
+        android:layout_height="95dp"
         android:layout_below="@id/start"
-        android:src="@drawable/petunjuk_button_en"
-        />
+        android:layout_alignStart="@+id/start"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/petunjuk_button_en" />
+
     <ImageButton
         android:id="@+id/exit"
         style="@style/Buttons"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/instruction"
-        android:src="@drawable/keluar_button_en"
-        />
+        android:src="@drawable/keluar_button_en" />
 
 </RelativeLayout>
