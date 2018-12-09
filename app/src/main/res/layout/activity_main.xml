@@ -62,13 +62,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:shadowColor="@color/shadow_color"
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="1"
                 android:text="Balita"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="24sp" />
         </LinearLayout>
 
@@ -91,13 +90,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:shadowColor="@color/shadow_color"
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="1"
                 android:text="Orang Tua"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="24sp" />
         </LinearLayout>
     </LinearLayout>

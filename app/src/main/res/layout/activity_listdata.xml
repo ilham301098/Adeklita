@@ -25,7 +25,7 @@
         android:layout_marginTop="15dp"
         android:text="Judul"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/gradient_top"
         android:textSize="30dp"
         android:shadowColor="@color/shadow_color"
         android:shadowDx="5"
@@ -52,7 +52,7 @@
             android:text="Deskripsi"
             android:fontFamily="@font/raleway_extra_bold"
             android:textColor="#000"
-            android:textSize="15dp"                   android:shadowColor="@color/shadow_color"
+            android:textSize="15dp"
             android:shadowDx="5"
             android:shadowDy="5"
             android:shadowRadius="1" />

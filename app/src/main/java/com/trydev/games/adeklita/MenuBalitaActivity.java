@@ -60,49 +60,14 @@ public class MenuBalitaActivity extends AppCompatActivity implements View.OnClic
                 startActivity(intent);
                 break;
             case R.id.exit:
-                AlertDialog.Builder builder= new AlertDialog.Builder(this);
-                builder.setMessage(R.string.wanna_exit)
-                        .setCancelable(true)
-                        .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                mediaPlayer.stop();
-                                MenuBalitaActivity.this.finish();
-                            }
-                        })
-                        .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        });
-                AlertDialog alert = builder.create();
-                alert.show();
+                intent = new Intent(MenuBalitaActivity.this, MainActivity.class);
+                mediaPlayer.stop();
+                startActivity(intent);
                 break;
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder builder= new AlertDialog.Builder(this);
-        builder.setMessage(R.string.wanna_exit)
-                .setCancelable(true)
-                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mediaPlayer.stop();
-                        MenuBalitaActivity.this.finish();
-                    }
-                })
-                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alert = builder.create();
-        alert.show();
-    }
+
 
     @Override
     protected void onDestroy() {

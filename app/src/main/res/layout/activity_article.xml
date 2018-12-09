@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:shadowColor="@color/outline_color"
         android:shadowRadius="2"
         android:shadowDy="10"
@@ -22,12 +22,13 @@
         android:text="Pilih Kategori"
         android:textAlignment="center"
         android:textSize="40sp"
-        android:textColor="@android:color/white"/>
+        android:textColor="@color/gradient_top"/>
 
     <ListView
         android:id="@+id/idListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="95dp"></ListView>
+
+        android:layout_marginTop="110dp"></ListView>
 
 </FrameLayout>
