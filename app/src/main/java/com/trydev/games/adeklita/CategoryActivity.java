@@ -77,7 +77,15 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
     private void crateAlphabetQuest() {
         ArrayList<Quest> alphabetQuest = new ArrayList<>();
-        alphabetQuest.add(new Quest(R.drawable.water_drop, "a","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.h, "h","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.a,"a","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.p, "p","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.y,"y","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.d, "d","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.i,"i","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.n, "n","huruf"));
+        alphabetQuest.add(new Quest(R.drawable.o,"o","huruf"));
+        GameActivity.myQuest = alphabetQuest;
     }
 
     private void createAnimalQuest() {
